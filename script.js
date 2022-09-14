@@ -11,3 +11,9 @@ library = [];
 function addToLibrary(book){
     library.push(book)
 }
+
+const book1 = new Book("Dav Pilkey","Dog Man",240,false);
+const book2 = new Book("Stephenie Meyer","Midnight Sun"
+,658,false);
+addToLibrary(book1)
+addToLibrary(book2)
