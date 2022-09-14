@@ -36,6 +36,7 @@ body{
 }
 .pageNumber{
     margin: 21px 0;
+    font-size: 1.4rem;
 }
 
 .readStatus{
