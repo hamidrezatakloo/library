@@ -20,4 +20,6 @@ addToLibrary(book2)
 
 const container = document.querySelector('.container');
 for (const book of library){
+    const div = document.createElement('div');
+    div.classList.add('book')
 }
