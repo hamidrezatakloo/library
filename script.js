@@ -28,4 +28,7 @@ for (const book of library){
     const author = document.createElement('h4');
     author.classList.add('author');
     author.textContent = book.author;
+    const pageNumber = document.createElement('div');
+    pageNumber.classList.add('pageNumber');
+    pageNumber.textContent = book.pageNumber;
 }
