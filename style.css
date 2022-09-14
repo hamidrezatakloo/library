@@ -37,3 +37,8 @@ body{
 .pageNumber{
     margin: 21px 0;
 }
+
+.readStatus{
+    border: none;
+    font: inherit;
+}
