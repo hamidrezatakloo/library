@@ -33,6 +33,7 @@ body{
 .book{
     color: #fafafa;
     text-align: center;
+    background-color: rgba(24,24,24,.8);
 }
 .pageNumber{
     margin: 21px 0;
