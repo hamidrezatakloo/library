@@ -5,3 +5,5 @@ function Book(name,author,title,pageNumber,readStatus){
     this.pageNumber = pageNumber;
     this.readStatus = readStatus;
 }
+
+library = [];
