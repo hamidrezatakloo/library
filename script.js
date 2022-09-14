@@ -17,3 +17,5 @@ const book2 = new Book("Stephenie Meyer","Midnight Sun"
 ,658,false);
 addToLibrary(book1)
 addToLibrary(book2)
+
+const container = document.querySelector('.container');
