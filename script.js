@@ -24,6 +24,8 @@ for (const book of library){
     div.classList.add('book');
     const title = document.createElement('h1');
     title.classList.add('title');
+    title.textContent = book.title;
     const author = document.createElement('h4');
     author.classList.add('author');
+    author.textContent = book.author;
 }
