@@ -1,5 +1,4 @@
-function Book(name,author,title,pageNumber,readStatus){
-    this.name = name;
+function Book(author,title,pageNumber,readStatus){
     this.author = author;
     this.title = title;
     this.pageNumber = pageNumber;
