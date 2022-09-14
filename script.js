@@ -35,4 +35,5 @@ for (const book of library){
     readStatus.classList.add('readStatus');
     readStatus.textContent = "Mark as read"
     div.append(title,author,pageNumber,readStatus);
+    container.appendChild(div);
 }
