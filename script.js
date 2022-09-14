@@ -34,4 +34,5 @@ for (const book of library){
     const readStatus = document.createElement('button');
     readStatus.classList.add('readStatus');
     readStatus.textContent = "Mark as read"
+    div.append(title,author,pageNumber,readStatus);
 }
