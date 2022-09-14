@@ -19,3 +19,5 @@ addToLibrary(book1)
 addToLibrary(book2)
 
 const container = document.querySelector('.container');
+for (const book of library){
+}
