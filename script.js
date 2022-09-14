@@ -7,3 +7,8 @@ function Book(name,author,title,pageNumber,readStatus){
 }
 
 library = [];
+
+
+function addToLibrary(book){
+    library.push(book)
+}
