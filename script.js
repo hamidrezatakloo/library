@@ -18,23 +18,25 @@ addToLibrary(book1)
 addToLibrary(book2)
 
 const container = document.querySelector('.container');
-for (const book of library){
-    const div = document.createElement('div');
-    div.classList.add('book');
-    const title = document.createElement('h1');
-    title.classList.add('title');
-    title.textContent = book.title;
-    const author = document.createElement('h4');
-    author.classList.add('author');
-    author.textContent = book.author;
-    const pageNumber = document.createElement('div');
-    pageNumber.classList.add('pageNumber');
-    pageNumber.textContent = book.pageNumber;
-    const readStatus = document.createElement('button');
-    readStatus.classList.add('readStatus');
-    readStatus.textContent = "Mark as read"
-    div.append(title,author,pageNumber,readStatus);
-    container.appendChild(div);
+function createbooks(){
+    for (const book of library){
+        const div = document.createElement('div');
+        div.classList.add('book');
+        const title = document.createElement('h1');
+        title.classList.add('title');
+        title.textContent = book.title;
+        const author = document.createElement('h4');
+        author.classList.add('author');
+        author.textContent = book.author;
+        const pageNumber = document.createElement('div');
+        pageNumber.classList.add('pageNumber');
+        pageNumber.textContent = book.pageNumber;
+        const readStatus = document.createElement('button');
+        readStatus.classList.add('readStatus');
+        readStatus.textContent = "Mark as read"
+        div.append(title,author,pageNumber,readStatus);
+        container.appendChild(div);
+    }
 }
 
 function togglePopup(){
@@ -58,4 +60,5 @@ document.addEventListener('click',(e)=>{
     const book =  new Book(author,title,pageNumber);
     addToLibrary(book);
     togglePopup();
+    console.log(library);
 })
