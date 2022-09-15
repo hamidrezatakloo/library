@@ -55,7 +55,7 @@ document.addEventListener('click',(e)=>{
     const title = document.getElementById("title").value;
     const author = document.getElementById("author").value;
     const pageNumber = document.getElementById("pageNumber").value;
-    const book = Book(author,title,pageNumber);
+    const book =  new Book(author,title,pageNumber);
     addToLibrary(book);
     togglePopup();
 })
