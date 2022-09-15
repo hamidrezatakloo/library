@@ -43,4 +43,5 @@ document.addEventListener('click',(e)=>{
         return;
     const popup = document.querySelector('.pop-up');
     const style = getComputedStyle(popup);
+    style.display=='none'?popup.style.display='initial':popup.style.display='none';
 })
