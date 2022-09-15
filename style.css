@@ -75,3 +75,8 @@ form>div{
     display: flex;
     gap: 20px;
 }
+
+form label{
+    width: 100px;
+    text-align: right;
+}
