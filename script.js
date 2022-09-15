@@ -49,6 +49,11 @@ function togglePopup(){
 }
 
 document.addEventListener('click',(e)=>{
+    if (e.target.matches('.readStatus'))
+        e.target.textContent==='Mark as read'?
+        e.target.textContent='Read ✔':
+        e.target.textContent='Mark as read';
+        
     if (!e.target.matches('.add-book'))
         return;
     togglePopup();
