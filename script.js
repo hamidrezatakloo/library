@@ -59,12 +59,8 @@ document.addEventListener('click',(e)=>{
     if (e.target.matches('.remove-button'))
         e.target.parentNode.remove();
 
-    if (!e.target.matches('.add-book'))
-        return;
-    togglePopup();
-})
-
-document.addEventListener('click',(e)=>{
+    if (e.target.matches('.add-book'))
+        togglePopup();
     if (!e.target.matches('form>button'))
         return;
     const title = document.getElementById("title").value;
