@@ -42,4 +42,5 @@ document.addEventListener('click',(e)=>{
     if (!e.target.matches('.add-book'))
         return;
     const popup = document.querySelector('.pop-up');
+    const style = getComputedStyle(popup);
 })
