@@ -70,3 +70,8 @@ body{
     justify-content: center;
     gap: 80px;
 }
+
+form>div{
+    display: flex;
+    gap: 20px;
+}
