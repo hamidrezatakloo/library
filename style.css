@@ -81,6 +81,8 @@ form>div{
 form label{
     width: 150px;
     text-align: right;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 form input{
