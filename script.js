@@ -37,3 +37,9 @@ for (const book of library){
     div.append(title,author,pageNumber,readStatus);
     container.appendChild(div);
 }
+
+document.addEventListener('click',(e)=>{
+    if (!e.target.matches('.add-book'))
+        return;
+    
+})
