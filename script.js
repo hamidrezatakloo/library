@@ -20,7 +20,8 @@ const container = document.querySelector('.container');
 function createBooks(){
     // clean container child elements
     container.replaceChildren();
-
+    // in each iteration information from book instance transform to html elements
+    // and at the end append as container child
     for (const book of library){
         const div = document.createElement('div');
         div.classList.add('book');
@@ -43,13 +44,13 @@ function createBooks(){
         container.appendChild(div);
     }
 }
-
+//toggle display of popup window between hidden and show
 function togglePopup(){
     const popup = document.querySelector('.pop-up');
     const style = getComputedStyle(popup);
     style.display=='none'?popup.style.display='initial':popup.style.display='none';
 }
-
+// handle buttons such as Add-book button,remove-book button,...
 document.addEventListener('click',(e)=>{
     if (e.target.matches('.readStatus'))
         e.target.textContent==='Mark as read'?
@@ -71,5 +72,5 @@ document.addEventListener('click',(e)=>{
     togglePopup();
     createBooks();
 })
-
+// create books after loading page first time
 createBooks();
