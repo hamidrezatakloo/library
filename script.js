@@ -56,6 +56,9 @@ document.addEventListener('click',(e)=>{
         e.target.textContent='Read ✔':
         e.target.textContent='Mark as read';
 
+    if (e.target.matches('.remove-button'))
+        e.target.parentNode.remove();
+
     if (!e.target.matches('.add-book'))
         return;
     togglePopup();
