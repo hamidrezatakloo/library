@@ -1,4 +1,4 @@
-function Book(author,title,pageNumber,readStatus){
+function Book(author,title,pageNumber,readStatus=false){
     this.author = author;
     this.title = title;
     this.pageNumber = pageNumber;
@@ -12,9 +12,8 @@ function addToLibrary(book){
     library.push(book)
 }
 
-const book1 = new Book("Dav Pilkey","Dog Man",240,false);
-const book2 = new Book("Stephenie Meyer","Midnight Sun"
-,658,false);
+const book1 = new Book("Dav Pilkey","Dog Man",240);
+const book2 = new Book("Stephenie Meyer","Midnight Sun",658);
 addToLibrary(book1)
 addToLibrary(book2)
 
