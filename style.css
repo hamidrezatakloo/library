@@ -91,6 +91,7 @@ form input{
     background-color: #2ecc71;
     border-radius: 4px;
     color: #fafafa;
+    font-weight: bold;
 }
 
 form>button{
