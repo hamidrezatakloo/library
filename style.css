@@ -60,6 +60,7 @@ body{
     top: 10%;
     left: 10%;
     background-color: #fafafa;
+    display: none;
 }
 
 .pop-up>form{
