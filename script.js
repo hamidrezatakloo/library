@@ -37,12 +37,16 @@ for (const book of library){
     container.appendChild(div);
 }
 
-document.addEventListener('click',(e)=>{
-    if (!e.target.matches('.add-book'))
-        return;
+function togglePopup(){
     const popup = document.querySelector('.pop-up');
     const style = getComputedStyle(popup);
     style.display=='none'?popup.style.display='initial':popup.style.display='none';
+}
+
+document.addEventListener('click',(e)=>{
+    if (!e.target.matches('.add-book'))
+        return;
+    togglePopup();
 })
 
 document.addEventListener('click',(e)=>{
@@ -53,4 +57,5 @@ document.addEventListener('click',(e)=>{
     const pageNumber = document.getElementById("pageNumber").value;
     const book = Book(author,title,pageNumber);
     addToLibrary(book);
+    togglePopup();
 })
