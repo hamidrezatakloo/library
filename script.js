@@ -35,7 +35,7 @@ function createBooks(){
         pageNumber.textContent = book.pageNumber;
         const readStatus = document.createElement('button');
         readStatus.classList.add('readStatus');
-        readStatus.textContent = "Mark as read"
+        readStatus.textContent = "Mark as read";
         div.append(title,author,pageNumber,readStatus);
         container.appendChild(div);
     }
