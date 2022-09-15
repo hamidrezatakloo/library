@@ -115,4 +115,5 @@ form>button,form label{
     top: 2%;
     right: 2%;
     width: 35px;
+    cursor: pointer;
 }
