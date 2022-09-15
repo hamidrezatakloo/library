@@ -18,7 +18,7 @@ addToLibrary(book1)
 addToLibrary(book2)
 
 const container = document.querySelector('.container');
-function createbooks(){
+function createBooks(){
     for (const book of library){
         const div = document.createElement('div');
         div.classList.add('book');
@@ -62,3 +62,5 @@ document.addEventListener('click',(e)=>{
     togglePopup();
     console.log(library);
 })
+
+createBooks();
