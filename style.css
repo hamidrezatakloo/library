@@ -36,6 +36,7 @@ body{
     text-align: center;
     background-color: rgba(24,24,24,.8);
     padding: 40px 0;
+    position: relative;
 }
 .pageNumber{
     margin: 21px 0;
@@ -107,4 +108,11 @@ form>button{
 form>button,form label{
     font-size: 1rem;
     font-weight: bold;
+}
+
+.remove-button{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 35px;
 }
