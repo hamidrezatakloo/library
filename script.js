@@ -39,7 +39,7 @@ function createBooks(){
         const removeButton = document.createElement('img');
         removeButton.setAttribute('src','./images/close-circle.svg');
         removeButton.classList.add('remove-button');  
-        div.append(title,author,pageNumber,readStatus);
+        div.append(title,author,pageNumber,readStatus,removeButton);
         container.appendChild(div);
     }
 }
