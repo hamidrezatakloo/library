@@ -60,7 +60,7 @@ document.addEventListener('click',(e)=>{
     const book =  new Book(author,title,pageNumber);
     addToLibrary(book);
     togglePopup();
-    console.log(library);
+    createBooks();
 })
 
 createBooks();
