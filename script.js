@@ -45,3 +45,8 @@ document.addEventListener('click',(e)=>{
     const style = getComputedStyle(popup);
     style.display=='none'?popup.style.display='initial':popup.style.display='none';
 })
+
+document.addEventListener('click',(e)=>{
+    if (!e.target.matches('form>button'))
+        return;
+})
