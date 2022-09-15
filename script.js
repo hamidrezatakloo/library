@@ -36,6 +36,9 @@ function createBooks(){
         const readStatus = document.createElement('button');
         readStatus.classList.add('readStatus');
         readStatus.textContent = "Mark as read";
+        const removeButton = document.createElement('img');
+        removeButton.setAttribute('src','./images/close-circle.svg');
+        removeButton.classList.add('remove-button');  
         div.append(title,author,pageNumber,readStatus);
         container.appendChild(div);
     }
