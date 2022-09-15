@@ -49,4 +49,7 @@ document.addEventListener('click',(e)=>{
 document.addEventListener('click',(e)=>{
     if (!e.target.matches('form>button'))
         return;
+    const title = document.getElementById("title").value;
+    const author = document.getElementById("author").value;
+    const pageNumber = document.getElementById("pageNumber").value;
 })
