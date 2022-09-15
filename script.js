@@ -19,6 +19,9 @@ addToLibrary(book2)
 
 const container = document.querySelector('.container');
 function createBooks(){
+    // clean container child elements
+    container.replaceChildren();
+
     for (const book of library){
         const div = document.createElement('div');
         div.classList.add('book');
